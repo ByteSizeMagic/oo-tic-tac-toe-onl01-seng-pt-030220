@@ -108,5 +108,8 @@ class TicTacToe
   def over?
     won? || draw?
   end
-  
+
+  def winner
+    return @board[won?[0]] if won?
+  end
 end
